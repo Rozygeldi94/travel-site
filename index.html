@@ -1,0 +1,2492 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Discover Amazing places in Japan</title>
+        <meta name="author" content="Rozygeldi Halykov" />
+        <meta name="keywords" content="HTML, CSS, JavaScript" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <script
+            src="https://kit.fontawesome.com/f64c94fd7b.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="./js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
+        <link
+            href="
+        https://cdn.jsdelivr.net/npm/swiper@9.0.2/swiper-bundle.min.css
+        "
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/css/flag-icon.css"
+        />
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <!-- Header start -->
+        <header class="header">
+            <div class="header__wrapper">
+                <a href="main.html" class="header__logo">
+                    <img src="./templates/img/logo.jpg" alt="logo header" />
+                </a>
+                <nav class="header__nav">
+                    <ul class="header__list menu" id="menu">
+                        <li>
+                            <a
+                                href="./templates/pages/parallax-effect.html"
+                                class="header__link"
+                                ><i class="fa-regular fa-newspaper"></i>
+                                &nbsp;Parallax</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#locations" class="header__link"
+                                ><i class="fa-solid fa-location-dot"></i>
+                                &nbsp;Locations</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#videos" class="header__link"
+                                ><i class="fa-solid fa-video"></i>
+                                &nbsp;Videos</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="./templates/pages/images.html"
+                                class="header__link"
+                            >
+                                <i class="fa-solid fa-image"></i>
+                                &nbsp;Images</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="./templates/pages/sign-in.html"
+                                class="header__link"
+                                ><i class="fa-solid fa-right-to-bracket"></i>
+                                &nbsp;Sign in</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+                <div class="hamburger">
+                    <div class="hamburger__field" id="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+                <div class="popup" id="popup"></div>
+            </div>
+        </header>
+        <!-- Header end -->
+        <!-- Scroll Top start -->
+        <div class="scrollToTop">
+            <svg
+                class="progress-circle svg-content"
+                width="100%"
+                height="100%"
+                viewBox="-1 -1 102 102"
+            >
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+            </svg>
+        </div>
+        <!-- scroll top end -->
+        <main class="main">
+            <!-- Intro start -->
+            <section class="intro" id="sign-in">
+                <div class="intro__wrapper">
+                    <div class="intro-title-block">
+                        <div class="intro__title" id="intro__title"></div>
+                        <span class="city-type" id="type"></span>
+                    </div>
+                    <div class="intro-form-wrapper">
+                        <h2 class="intro__subtitle">
+                            Around The World Tours and Holiday Packages
+                        </h2>
+
+                        <form class="search-form">
+                            <div class="search-form__block">
+                                <div class="search-form__field">
+                                    <div class="form-search-city">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <input
+                                        type="text"
+                                        name="user-like-to-do"
+                                        placeholder="Where would you like to go?"
+                                    />
+                                </div>
+                                <div class="form-date">
+                                    <input type="date" />
+                                </div>
+                                <div class="count-person">
+                                    <span class="count-result">1</span>
+                                    <span>Person</span>
+                                    <img
+                                        class="person-increment"
+                                        src="./templates/img/left-arrow.png"
+                                        alt="top"
+                                    />
+                                    <img
+                                        class="person-decrement"
+                                        src="./templates/img/right-arrow.png"
+                                        alt="bottom"
+                                    />
+                                </div>
+                            </div>
+
+                            <button type="button" class="search-form__submit">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                search
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- Intro end -->
+
+            <!-- Benefits start -->
+            <div class="benefits">
+                <div class="benefits__wrapper">
+                    <div
+                        class="benefits__wrap wow animate__animated animate__zoomIn"
+                    >
+                        <h2 id="benefits" class="benefits__title">
+                            Top countries for tourism
+                        </h2>
+                        <div class="slide-container swiper">
+                            <div class="slide-content">
+                                <div class="card-wrapper swiper-wrapper">
+                                    <div
+                                        class="card-destination card swiper-slide"
+                                    >
+                                        <div class="destination-image">
+                                            <img
+                                                class="lola"
+                                                src="https://lh3.googleusercontent.com/7Yyz-lz22AQEEEsHRrFnWrGJGM7uVmoljdFkaotxgsZYIdtdk7vLb7Pdi1od4jzv3dBCX84xLJuVvyglnb_qcbaWXY1C7UjU8SgD_j6xKUwZ1BIKwZ2O9Qqh8ITjtzuGxK_b-8oOgDqDzEWimXvfPeqBxRztLF4n_jM7q7BSigR0rvQ_XFq9NR3qKJMItkvWHXBwWqWxkfXsUwfe0DthPXVZWG4M_G8ET47ccMrnPziolwiODcUmPSlseJU4RuKamNinyPenCWI9ld7675Mo8-YdisEPq25P17eoAq9NDet71rEZXwHigy5ClX8fZS_nrMrTKmN2WLGGrdlcOJSNURGhqHKQ8gT73YaC4pLr_-V0ME1yFO6xivi88SeqqE8YaMgonn-Q6dvGfRTbM8VQ45Wem06E2z7l-6ZgbvQLMRO8v8QhxK_yyHqlXzwc2579rcJNMrAfv9mFofq5O2QIS17U0Jkp-mu56HgO6BHGHYX-fFZdSJiC6FxxYVoRI_EQCkNHiKnQwLKrjOo8xoNorSlAH3Hef5pKQelCUgCo6R3v8BcA2TC2eK3CwgLeVRmicd5Aq8qoB2eekKR9iWE5jqN_lBMyYINVtu3cwDvFJgsR3LS_T4Fmpatd3QgN7KtG-WzZ3ePtdtEy1Ss4OWsJhXWfdt1sHdK1ndOa6tOKnQ=w550-h364-no"
+                                                alt="United Kingdom"
+                                            />
+                                        </div>
+                                        <div class="country-flag">
+                                            <span
+                                                class="flag-icon flag-icon-gb flag-icon-squared country-flag-size-2x country-flag-circle"
+                                            ></span>
+                                        </div>
+                                        <div class="destination-info">
+                                            <div class="place-name">
+                                                <h2>United Kingdom</h2>
+                                            </div>
+                                            <div class="place-desc">
+                                                <p>
+                                                    London is the capital and
+                                                    largest city of England and
+                                                    the United Kingdom, with a
+                                                    population of just under 9
+                                                    million.
+                                                </p>
+                                            </div>
+                                            <div class="below-line"></div>
+                                            <div class="destination-hastag">
+                                                #London &nbsp; #United Kingdom
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-destination card swiper-slide"
+                                    >
+                                        <div class="destination-image">
+                                            <img
+                                                class=""
+                                                src="https://img.20mn.fr/DNDF2JgSTrebGQFvwRi1_Sk/814x360_une-ile-un-hotel-la-strategie-des-maldives-a-permis-le-developpement-d-un-tourisme-adapte-a-l-environnement"
+                                                alt="maldives"
+                                            />
+                                        </div>
+                                        <div class="country-flag">
+                                            <span
+                                                class="flag-icon flag-icon-mv flag-icon-squared country-flag-size-2x country-flag-circle"
+                                            ></span>
+                                        </div>
+                                        <div class="destination-info">
+                                            <div class="place-name">
+                                                <h2>Maldives</h2>
+                                            </div>
+                                            <div class="place-desc">
+                                                <p>
+                                                    Maldives, in full Republic
+                                                    of Maldives, also called
+                                                    Maldive Islands, independent
+                                                    island country in the
+                                                    north-central Indian Ocean.
+                                                </p>
+                                            </div>
+                                            <div class="below-line"></div>
+                                            <div class="destination-hastag">
+                                                #Male &nbsp; #Maldives
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-destination card swiper-slide"
+                                    >
+                                        <div class="destination-image">
+                                            <img
+                                                class=""
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwV0pToypHeqbagrImx_UFYyrSgG39aZpHnQ&usqp=CAU"
+                                                alt="Spain"
+                                            />
+                                        </div>
+                                        <div class="country-flag">
+                                            <span
+                                                class="flag-icon flag-icon-es flag-icon-squared country-flag-size-2x country-flag-circle"
+                                            ></span>
+                                        </div>
+                                        <div class="destination-info">
+                                            <div class="place-name">
+                                                <h2>Spain</h2>
+                                            </div>
+                                            <div class="place-desc">
+                                                <p>
+                                                    The Kingdom of Spain has a
+                                                    population of 47.1 million
+                                                    people (in 2020), the
+                                                    capital and largest city is
+                                                    Madrid; Spain's second city
+                                                    is Barcelona,
+                                                </p>
+                                            </div>
+                                            <div class="below-line"></div>
+                                            <div class="destination-hastag">
+                                                #Madrid &nbsp; #Spain
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-destination card swiper-slide"
+                                    >
+                                        <div class="destination-image">
+                                            <img
+                                                src="data:image/jpeg;base64,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"
+                                                alt="France"
+                                            />
+                                        </div>
+                                        <div class="country-flag">
+                                            <span
+                                                class="flag-icon flag-icon-fr flag-icon-squared country-flag-size-2x country-flag-circle"
+                                            ></span>
+                                        </div>
+                                        <div class="destination-info">
+                                            <div class="place-name">
+                                                <h2>France</h2>
+                                            </div>
+                                            <div class="place-desc">
+                                                <p>
+                                                    France Is the Most-Visited
+                                                    Country in the World.
+                                                    Poulation of France is 68
+                                                    million. France Is Smaller
+                                                    Than Texas.
+                                                </p>
+                                            </div>
+                                            <div class="below-line"></div>
+                                            <div class="destination-hastag">
+                                                #Paris &nbsp; #France
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-destination card swiper-slide"
+                                    >
+                                        <div class="destination-image">
+                                            <img
+                                                src="https://assets.enuygun.com/media/lib/570x400/uploads/image/4062.jpeg"
+                                                alt="Germany"
+                                            />
+                                        </div>
+                                        <div class="country-flag">
+                                            <span
+                                                class="flag-icon flag-icon-de flag-icon-squared country-flag-size-2x country-flag-circle"
+                                            ></span>
+                                        </div>
+                                        <div class="destination-info">
+                                            <div class="place-name">
+                                                <h2>Germany</h2>
+                                            </div>
+                                            <div class="place-desc">
+                                                <p>
+                                                    Germany, officially the
+                                                    Federal Republic of Germany,
+                                                    is a country in Central
+                                                    Europe. It is the
+                                                    second-most populous country
+                                                    in Europe after Russia
+                                                </p>
+                                            </div>
+                                            <div class="below-line"></div>
+                                            <div class="destination-hastag">
+                                                #Berlin &nbsp; #Germany
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-destination card swiper-slide"
+                                    >
+                                        <div class="destination-image">
+                                            <img
+                                                src="https://a.storyblok.com/f/112937/568x349/f2e7eb7fca/16multi_blog_promo_630x349_apr_se_1-568x349-1.jpg/m/620x0/filters:quality(70)/"
+                                                alt="Japan"
+                                            />
+                                        </div>
+                                        <div class="country-flag">
+                                            <span
+                                                class="flag-icon flag-icon-jp flag-icon-squared country-flag-size-2x country-flag-circle"
+                                            ></span>
+                                        </div>
+                                        <div class="destination-info">
+                                            <div class="place-name">
+                                                <h2>Japan</h2>
+                                            </div>
+                                            <div class="place-desc">
+                                                <p>
+                                                    Japan is an island country
+                                                    in East Asia. It is situated
+                                                    in the northwest Pacific
+                                                    Ocean and is bordered on the
+                                                    west by the Sea of Japan.
+                                                </p>
+                                            </div>
+                                            <div class="below-line"></div>
+                                            <div class="destination-hastag">
+                                                #Tokyo &nbsp;#Japan
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-destination card swiper-slide"
+                                    >
+                                        <div class="destination-image">
+                                            <img
+                                                class="lol"
+                                                src="https://i.natgeofe.com/k/8dc7401d-fac9-43c5-a6d4-d056401f7779/kuala-lumpur.jpg?w=636&h=424"
+                                                alt="Malaysia"
+                                            />
+                                        </div>
+                                        <div class="country-flag">
+                                            <span
+                                                class="flag-icon flag-icon-my flag-icon-squared country-flag-size-2x country-flag-circle"
+                                            ></span>
+                                        </div>
+                                        <div class="destination-info">
+                                            <div class="place-name">
+                                                <h2>Malaysia</h2>
+                                            </div>
+                                            <div class="place-desc">
+                                                <p>
+                                                    Malaysia is one of the most
+                                                    multicultural countries in
+                                                    Southeast Asia.
+                                                </p>
+                                            </div>
+                                            <div class="below-line"></div>
+                                            <div class="destination-hastag">
+                                                #Kuala Lumpur &nbsp; #Malaysia
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-destination card swiper-slide"
+                                    >
+                                        <div class="destination-image">
+                                            <img
+                                                class="uu"
+                                                src="https://ichef.bbci.co.uk/news/640/cpsprodpb/170E5/production/_85373449_china_greatwall_jinshangling_12_afp.jpg"
+                                                alt="China"
+                                            />
+                                        </div>
+                                        <div class="country-flag">
+                                            <span
+                                                class="flag-icon flag-icon-cn flag-icon-squared country-flag-size-2x country-flag-circle"
+                                            ></span>
+                                        </div>
+                                        <div class="destination-info">
+                                            <div class="place-name">
+                                                <h2>China</h2>
+                                            </div>
+                                            <div class="place-desc">
+                                                <p>
+                                                    It is the largest of all
+                                                    Asian countries and has the
+                                                    largest population of any
+                                                    country in the world.
+                                                </p>
+                                            </div>
+                                            <div class="below-line"></div>
+                                            <div class="destination-hastag">
+                                                #Beijing &nbsp;#China
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-destination card swiper-slide"
+                                    >
+                                        <div class="destination-image">
+                                            <img
+                                                class=""
+                                                src="https://gezimanya.com/sites/default/files/styles/700x350/public/location/6652.jpg"
+                                                alt="United states"
+                                            />
+                                        </div>
+                                        <div class="country-flag">
+                                            <span
+                                                class="flag-icon flag-icon-us flag-icon-squared country-flag-size-2x country-flag-circle"
+                                            ></span>
+                                        </div>
+                                        <div class="destination-info">
+                                            <div class="place-name">
+                                                <h2>United States</h2>
+                                            </div>
+                                            <div class="place-desc">
+                                                <p>
+                                                    The United States is the
+                                                    fourth largest country in
+                                                    the world in area.
+                                                    Washington DC is the capital
+                                                    of USA
+                                                </p>
+                                            </div>
+                                            <div class="below-line"></div>
+                                            <div class="destination-hastag">
+                                                #Washington &nbsp;#United States
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="card-destination card swiper-slide"
+                                    >
+                                        <div class="destination-image">
+                                            <img
+                                                class=""
+                                                src="https://media.istockphoto.com/id/1397074922/photo/istanbul-bosphorus-bridge-or-15th-july-martyrs-bridge-at-sunset-istanbul-turkey.jpg?b=1&s=170667a&w=0&k=20&c=kcWToBmp9qsTOAGauhM-h96kHiK47U51rXgLwoV--po="
+                                                alt="Turkiye"
+                                            />
+                                        </div>
+                                        <div class="country-flag">
+                                            <span
+                                                class="flag-icon flag-icon-tr flag-icon-squared country-flag-size-2x country-flag-circle"
+                                            ></span>
+                                        </div>
+                                        <div class="destination-info">
+                                            <div class="place-name">
+                                                <h2>Turkiye</h2>
+                                            </div>
+                                            <div class="place-desc">
+                                                <p>
+                                                    Turkish cuisine is one of
+                                                    the most appetizing and rich
+                                                    cuisines of the world.
+                                                </p>
+                                            </div>
+                                            <div class="below-line"></div>
+                                            <div class="destination-hastag">
+                                                #Ankara &nbsp; #Turkiye
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-button-next swiper-navBtn"></div>
+                            <div class="swiper-button-prev swiper-navBtn"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Benefits end -->
+
+            <!-- Places start -->
+            <div class="search-places">
+                <div class="search-places__wrapper">
+                    <div class="filter-header">
+                        <h1>City Filter</h1>
+
+                        <div class="search-box">
+                            <input
+                                type="text"
+                                id="search"
+                                placeholder="Search City"
+                            />
+                            <span
+                                >Total cities:
+                                <span class="cities-length"></span
+                            ></span>
+                        </div>
+                        <div class="filter-box">
+                            <a
+                                href="#"
+                                class="btn-filter all active"
+                                data-filter="all"
+                                >All</a
+                            >
+                            <a href="#" class="btn-filter" data-filter="china"
+                                >China</a
+                            >
+                            <a href="#" class="btn-filter" data-filter="france"
+                                >France</a
+                            >
+                            <a href="#" class="btn-filter" data-filter="germany"
+                                >Germany</a
+                            >
+                            <a href="#" class="btn-filter" data-filter="japan"
+                                >Japan</a
+                            >
+                            <a
+                                href="#"
+                                class="btn-filter"
+                                data-filter="maldives"
+                                >Maldives</a
+                            >
+                            <a
+                                href="#"
+                                class="btn-filter"
+                                data-filter="malaysia"
+                                >Malaysia</a
+                            >
+                            <a href="#" class="btn-filter" data-filter="spain"
+                                >Spain</a
+                            >
+                            <a href="#" class="btn-filter" data-filter="turkiye"
+                                >Turkiye</a
+                            >
+                            <a href="#" class="btn-filter" data-filter="usa"
+                                >USA</a
+                            >
+                            <a href="#" class="btn-filter" data-filter="uk"
+                                >United Kingdom</a
+                            >
+                        </div>
+                    </div>
+                    <div class="places__wrapper">
+                        <div class="store-products">
+                            <div class="weather-card Ankara turkiye _active">
+                                <div class="left">
+                                    <div class="clock clock-Ankara"></div>
+                                    <div class="date date-Ankara"></div>
+                                    <div class="city city-Ankara"></div>
+                                    <div class="temp-block">
+                                        <img
+                                            src="./templates/img/weather-svg/sad.png"
+                                            alt="weather icon"
+                                            class="weather-icon weather-icon-Ankara"
+                                        />
+                                        <div
+                                            class="tempreture tempreture-Ankara"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <img
+                                        class="right-img"
+                                        src="https://www.ankarapusatnakliyat.com/wp-content/uploads/2020/07/cankaya.jpg"
+                                        alt="picture Ankara"
+                                    />
+                                </div>
+                            </div>
+                            <div class="weather-card Istanbul turkiye _active">
+                                <div class="left">
+                                    <div class="clock clock-Istanbul"></div>
+                                    <div class="date date-Istanbul"></div>
+                                    <div class="city city-Istanbul"></div>
+                                    <div class="temp-block">
+                                        <img
+                                            src="./templates/img/weather-svg/sad.png"
+                                            alt="weather icon"
+                                            class="weather-icon weather-icon-Istanbul"
+                                        />
+                                        <div
+                                            class="tempreture tempreture-Istanbul"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <img
+                                        class="right-img"
+                                        src="https://cdn.tripster.ru/thumbs2/c97acb80-04a2-11ea-a29a-02d82f4896e8.384x289.jpg"
+                                        alt="picture istanbul"
+                                    />
+                                </div>
+                            </div>
+                            <div class="weather-card Antalya turkiye _active">
+                                <div class="left">
+                                    <div class="clock clock-Antalya"></div>
+                                    <div class="date date-Antalya"></div>
+                                    <div class="city city-Antalya"></div>
+                                    <div class="temp-block">
+                                        <img
+                                            src="./templates/img/weather-svg/sad.png"
+                                            alt="weather icon"
+                                            class="weather-icon weather-icon-Antalya"
+                                        />
+                                        <div
+                                            class="tempreture tempreture-Antalya"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <img
+                                        class="right-img"
+                                        src="https://reisebloggerwelt.de/wp-content/uploads/Antalya_Hafen.jpg"
+                                        alt="picture Antalya"
+                                    />
+                                </div>
+                            </div>
+                            <div class="weather-card Male maldives _active">
+                                <div class="left">
+                                    <div class="clock clock-Male"></div>
+                                    <div class="date date-Male"></div>
+                                    <div class="city city-Male"></div>
+                                    <div class="temp-block">
+                                        <img
+                                            src="./templates/img/weather-svg/sad.png"
+                                            alt="weather icon"
+                                            class="weather-icon weather-icon-Male"
+                                        />
+                                        <div
+                                            class="tempreture tempreture-Male"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <img
+                                        class="right-img"
+                                        src="https://routemate.in/wp-content/uploads/2017/05/routemate-maldives-9--400x270.jpg"
+                                        alt="picture Maldives"
+                                    />
+                                </div>
+                            </div>
+                            <div class="weather-card Addu maldives _active">
+                                <div class="left">
+                                    <div class="clock clock-Addu"></div>
+                                    <div class="date date-Addu"></div>
+                                    <div class="city city-Addu"></div>
+                                    <div class="temp-block">
+                                        <img
+                                            src="./templates/img/weather-svg/sad.png"
+                                            alt="weather icon"
+                                            class="weather-icon weather-icon-Addu"
+                                        />
+                                        <div
+                                            class="tempreture tempreture-Addu"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <img
+                                        class="right-img"
+                                        src="https://shangri-la-s-villingili-hotel-villingili-island.booked.net/data/Photos/380x204/7898/789861/789861732/Shangri-La-Villingili-Resort-Villingili-Island-Exterior.JPEG"
+                                        alt="picture Maldives"
+                                    />
+                                </div>
+                            </div>
+                            <div class="weather-card Washington usa _active">
+                                <div class="left">
+                                    <div class="clock clock-Washington"></div>
+                                    <div class="date date-Washington"></div>
+                                    <div class="city city-Washington"></div>
+                                    <div class="temp-block">
+                                        <img
+                                            src="./templates/img/weather-svg/sad.png"
+                                            alt="weather icon"
+                                            class="weather-icon weather-icon-Washington"
+                                        />
+                                        <div
+                                            class="tempreture tempreture-Washington"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <img
+                                        class="right-img"
+                                        src="https://biletbak.com/img/upload/article/washington-a-nasil-gidilir-80646.jpg?w=350"
+                                        alt="picture Washington"
+                                    />
+                                </div>
+                            </div>
+                            <div class="weather-card New-York usa _active">
+                                <div class="left">
+                                    <div class="clock clock-New-York"></div>
+                                    <div class="date date-New-York"></div>
+                                    <div class="city city-New-York"></div>
+                                    <div class="temp-block">
+                                        <img
+                                            src="./templates/img/weather-svg/sad.png"
+                                            alt="weather icon"
+                                            class="weather-icon weather-icon-New-York"
+                                        />
+                                        <div
+                                            class="tempreture tempreture-New-York"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <img
+                                        class="right-img"
+                                        src="https://1.bp.blogspot.com/-nmWtgazIUGc/T69LllmINDI/AAAAAAAAC98/1zM3xzvGH-I/s400/Manhattan_New_York_City_hd_wallpaper.jpg"
+                                        alt="picture New-York"
+                                    />
+                                </div>
+                            </div>
+                            <div class="weather-card Miami usa _active">
+                                <div class="left">
+                                    <div class="clock clock-Miami"></div>
+                                    <div class="date date-Miami"></div>
+                                    <div class="city city-Miami"></div>
+                                    <div class="temp-block">
+                                        <img
+                                            src="./templates/img/weather-svg/sad.png"
+                                            alt="weather icon"
+                                            class="weather-icon weather-icon-Miami"
+                                        />
+                                        <div
+                                            class="tempreture tempreture-Miami"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <img
+                                        class="right-img"
+                                        src="http://speakabout.fr/wp-content/uploads/2013/01/Miami_Beach-300x199.jpg"
+                                        alt="picture Miami"
+                                    />
+                                </div>
+                            </div>
+                            <div class="weather-card Los-Angeles usa _active">
+                                <div class="left">
+                                    <div class="clock clock-Los-Angeles"></div>
+                                    <div class="date date-Los-Angeles"></div>
+                                    <div class="city city-Los-Angeles"></div>
+                                    <div class="temp-block">
+                                        <img
+                                            src="./templates/img/weather-svg/sad.png"
+                                            alt="weather icon"
+                                            class="weather-icon weather-icon-Los-Angeles"
+                                        />
+                                        <div
+                                            class="tempreture tempreture-Los-Angeles"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <img
+                                        class="right-img"
+                                        src="https://www.huntingtonpkg.net/images/about.jpg"
+                                        alt="picture Los-Angeles"
+                                    />
+                                </div>
+                            </div>
+                            <div class="weather-card California usa _active">
+                                <div class="left">
+                                    <div class="clock clock-California"></div>
+                                    <div class="date date-California"></div>
+                                    <div class="city city-California"></div>
+                                    <div class="temp-block">
+                                        <img
+                                            src="./templates/img/weather-svg/sad.png"
+                                            alt="weather icon"
+                                            class="weather-icon weather-icon-California"
+                                        />
+                                        <div
+                                            class="tempreture tempreture-California"
+                                        ></div>
+                                    </div>
+                                </div>
+
+                                <div class="right">
+                                    <img
+                                        class="right-img"
+                                        src="https://img.scoop.it/G7V5xM2mTfCLmZP9GtB7X4XXXL4j3HpexhjNOf_P3YmryPKwJ94QGRtDb3Sbc6KY"
+                                        alt="picture California"
+                                    />
+                                </div>
+                            </div>
+                            <div class="weather-card Chicago usa _active">
+                                <div class="left">
+                                    <div class="clock clock-Chicago"></div>
+                                    <div class="date date-Chicago"></div>
+                                    <div class="city city-Chicago"></div>
+                                    <div class="temp-block">
+                                        <img
+                                            src="./templates/img/weather-svg/sad.png"
+                                            alt="weather icon"
+                                            class="weather-icon weather-icon-Chicago"
+                                        />
+                                        <div
+                                            class="tempreture tempreture-Chicago"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <img
+                                        class="right-img"
+                                        src="https://basicincome.org/wp-content/uploads/2018/07/28131423133_51991e7efb_z-420x276.jpg"
+                                        alt="picture Chicago"
+                                    />
+                                </div>
+                            </div>
+                            <div class="weather-card London uk _active">
+                                <div class="left">
+                                    <div class="clock clock-London"></div>
+                                    <div class="date date-London"></div>
+                                    <div class="city city-London"></div>
+                                    <div class="temp-block">
+                                        <img
+                                            src="./templates/img/weather-svg/sad.png"
+                                            alt="weather icon"
+                                            class="weather-icon weather-icon-London"
+                                        />
+                                        <div
+                                            class="tempreture tempreture-London"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <img
+                                        class="right-img"
+                                        src="https://pbs.twimg.com/media/CenjcUGUIAANqez.jpg"
+                                        alt="picture London"
+                                    />
+                                </div>
+                            </div>
+                            <div class="weather-card Manchester uk _active">
+                                <div class="left">
+                                    <div class="clock clock-Manchester"></div>
+                                    <div class="date date-Manchester"></div>
+                                    <div class="city city-Manchester"></div>
+                                    <div class="temp-block">
+                                        <img
+                                            src="./templates/img/weather-svg/sad.png"
+                                            alt="weather icon"
+                                            class="weather-icon weather-icon-Manchester"
+                                        />
+                                        <div
+                                            class="tempreture tempreture-Manchester"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <img
+                                        class="right-img"
+                                        src="http://nova-ekonomika.cz/wp-content/uploads/2016/02/manchester1-375x250.jpg"
+                                        alt="picture Manchester"
+                                    />
+                                </div>
+                            </div>
+                            <div class="weather-card Liverpool uk _active">
+                                <div class="left">
+                                    <div class="clock clock-Liverpool"></div>
+                                    <div class="date date-Liverpool"></div>
+                                    <div class="city city-Liverpool"></div>
+                                    <div class="temp-block">
+                                        <img
+                                            src="./templates/img/weather-svg/sad.png"
+                                            alt="weather icon"
+                                            class="weather-icon weather-icon-Liverpool"
+                                        />
+                                        <div
+                                            class="tempreture tempreture-Liverpool"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <img
+                                        class="right-img"
+                                        src="https://www.klfreight.com/media/Liverpool-Landmarks-England-171572527_726x483-300x200.jpeg"
+                                        alt="picture Liverpool"
+                                    />
+                                </div>
+                            </div>
+                            <div class="weather-card Beijing china _active">
+                                <div class="left">
+                                    <div class="clock clock-Beijing"></div>
+                                    <div class="date date-Beijing"></div>
+                                    <div class="city city-Beijing"></div>
+                                    <div class="temp-block">
+                                        <img
+                                            src="./templates/img/weather-svg/sad.png"
+                                            alt="weather icon"
+                                            class="weather-icon weather-icon-Beijing"
+                                        />
+                                        <div
+                                            class="tempreture tempreture-Beijing"
+                                        ></div>
+                                    </div>
+                                </div>
+
+                                <div class="right">
+                                    <img
+                                        class="right-img"
+                                        src="https://chinalogist.ru/sites/default/files/styles/medium/public/pekin5.jpeg"
+                                        alt="picture Beijing"
+                                    />
+                                </div>
+                            </div>
+                            <div class="weather-card Shanghai china _active">
+                                <div class="left">
+                                    <div class="clock clock-Shanghai"></div>
+                                    <div class="date date-Shanghai"></div>
+                                    <div class="city city-Shanghai"></div>
+                                    <div class="temp-block">
+                                        <img
+                                            src="./templates/img/weather-svg/sad.png"
+                                            alt="weather icon"
+                                            class="weather-icon weather-icon-Shanghai"
+                                        />
+                                        <div
+                                            class="tempreture tempreture-Shanghai"
+                                        ></div>
+                                    </div>
+                                </div>
+
+                                <div class="right">
+                                    <img
+                                        class="right-img"
+                                        src="https://lasmilmillas.com/wp-content/uploads/2014/09/5-300x210.jpg"
+                                        alt="picture Shanghai"
+                                    />
+                                </div>
+                            </div>
+                            <div class="weather-card Chongqing china _active">
+                                <div class="left">
+                                    <div class="clock clock-Chongqing"></div>
+                                    <div class="date date-Chongqing"></div>
+                                    <div class="city city-Chongqing"></div>
+                                    <div class="temp-block">
+                                        <img
+                                            src="./templates/img/weather-svg/sad.png"
+                                            alt="weather icon"
+                                            class="weather-icon weather-icon-Chongqing"
+                                        />
+                                        <div
+                                            class="tempreture tempreture-Chongqing"
+                                        ></div>
+                                    </div>
+                                </div>
+
+                                <div class="right">
+                                    <img
+                                        class="right-img"
+                                        src="https://chinalogist.ru/sites/default/files/styles/medium/public/news/chuncin-4.jpg"
+                                        alt="picture Chongqing"
+                                    />
+                                </div>
+                            </div>
+                            <div class="weather-card Guangzhou china _active">
+                                <div class="left">
+                                    <div class="clock clock-Guangzhou"></div>
+                                    <div class="date date-Guangzhou"></div>
+                                    <div class="city city-Guangzhou"></div>
+                                    <div class="temp-block">
+                                        <img
+                                            src="./templates/img/weather-svg/sad.png"
+                                            alt="weather icon"
+                                            class="weather-icon weather-icon-Guangzhou"
+                                        />
+                                        <div
+                                            class="tempreture tempreture-Guangzhou"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <img
+                                        class="right-img"
+                                        src="https://chinalogist.ru/sites/default/files/styles/medium/public/guanch2_2.jpg"
+                                        alt="picture Chongqing"
+                                    />
+                                </div>
+                            </div>
+                            <div class="weather-card Paris france _active">
+                                <div class="left">
+                                    <div class="clock clock-Paris"></div>
+                                    <div class="date date-Paris"></div>
+                                    <div class="city city-Paris"></div>
+                                    <div class="temp-block">
+                                        <img
+                                            src="./templates/img/weather-svg/sad.png"
+                                            alt="weather icon"
+                                            class="weather-icon weather-icon-Paris"
+                                        />
+                                        <div
+                                            class="tempreture tempreture-Paris"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <img
+                                        class="right-img"
+                                        src="http://iser.co/list-img/Paris,France.jpg"
+                                        alt="picture Paris"
+                                    />
+                                </div>
+                            </div>
+                            <div class="weather-card Marseille france _active">
+                                <div class="left">
+                                    <div class="clock clock-Marseille"></div>
+                                    <div class="date date-Marseille"></div>
+                                    <div class="city city-Marseille"></div>
+                                    <div class="temp-block">
+                                        <img
+                                            src="./templates/img/weather-svg/sad.png"
+                                            alt="weather icon"
+                                            class="weather-icon weather-icon-Marseille"
+                                        />
+                                        <div
+                                            class="tempreture tempreture-Marseille"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <img
+                                        class="right-img"
+                                        src="https://www.visit-france.org/vyglazoo/2021/12/Visit-Marseille-21-370x270.jpg"
+                                        alt="picture Marseille"
+                                    />
+                                </div>
+                            </div>
+                            <div class="weather-card Lyon france _active">
+                                <div class="left">
+                                    <div class="clock clock-Lyon"></div>
+                                    <div class="date date-Lyon"></div>
+                                    <div class="city city-Lyon"></div>
+                                    <div class="temp-block">
+                                        <img
+                                            src="./templates/img/weather-svg/sad.png"
+                                            alt="weather icon"
+                                            class="weather-icon weather-icon-Lyon"
+                                        />
+                                        <div
+                                            class="tempreture tempreture-Lyon"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <img
+                                        class="right-img"
+                                        src="https://chrontime.com/public/city/12/12290/_lyon-1-650x380.jpg"
+                                        alt="picture Lyone"
+                                    />
+                                </div>
+                            </div>
+                            <div class="weather-card Madrid spain _active">
+                                <div class="left">
+                                    <div class="clock clock-Madrid"></div>
+                                    <div class="date date-Madrid"></div>
+                                    <div class="city city-Madrid"></div>
+                                    <div class="temp-block">
+                                        <img
+                                            src="./templates/img/weather-svg/sad.png"
+                                            alt="weather Madrid"
+                                            class="weather-icon weather-icon-Madrid"
+                                        />
+                                        <div
+                                            class="tempreture tempreture-Madrid"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <img
+                                        class="right-img"
+                                        src="https://www.aoinform.com/_nw/124/47896259.jpg"
+                                        alt="picture Madrid"
+                                    />
+                                </div>
+                            </div>
+                            <div class="weather-card Barcelona spain _active">
+                                <div class="left">
+                                    <div class="clock clock-Barcelona"></div>
+                                    <div class="date date-Barcelona"></div>
+                                    <div class="city city-Barcelona"></div>
+                                    <div class="temp-block">
+                                        <img
+                                            src="./templates/img/weather-svg/sad.png"
+                                            alt="weather Barcelona"
+                                            class="weather-icon weather-icon-Barcelona"
+                                        />
+                                        <div
+                                            class="tempreture tempreture-Barcelona"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <img
+                                        class="right-img"
+                                        src="https://myktrip.net/wp-content/uploads/2021/11/telechargement-2.jpg"
+                                        alt="picture Barcelona"
+                                    />
+                                </div>
+                            </div>
+                            <div class="weather-card Seville spain _active">
+                                <div class="left">
+                                    <div class="clock clock-Seville"></div>
+                                    <div class="date date-Seville"></div>
+                                    <div class="city city-Seville"></div>
+                                    <div class="temp-block">
+                                        <img
+                                            src="./templates/img/weather-svg/sad.png"
+                                            alt="weather Seville"
+                                            class="weather-icon weather-icon-Seville"
+                                        />
+                                        <div
+                                            class="tempreture tempreture-Seville"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <img
+                                        class="right-img"
+                                        src="https://pbs.twimg.com/media/EnqS-KqW8AgfG_f.png"
+                                        alt="picture Seville"
+                                    />
+                                </div>
+                            </div>
+                            <div class="weather-card Valencia spain _active">
+                                <div class="left">
+                                    <div class="clock clock-Valencia"></div>
+                                    <div class="date date-Valencia"></div>
+                                    <div class="city city-Valencia"></div>
+                                    <div class="temp-block">
+                                        <img
+                                            src="./templates/img/weather-svg/sad.png"
+                                            alt="weather Valencia"
+                                            class="weather-icon weather-icon-Valencia"
+                                        />
+                                        <div
+                                            class="tempreture tempreture-Valencia"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <img
+                                        class="right-img"
+                                        src="https://1.bp.blogspot.com/-b6M8fsKkqFY/W4e_4MjY8cI/AAAAAAAAJP4/kQ4-MhpsrVMh4mVLn8oqkloHnGFrUyZPwCLcBGAs/s400/valencia.jpg"
+                                        alt="picture Valencia"
+                                    />
+                                </div>
+                            </div>
+                            <div class="weather-card Berlin germany _active">
+                                <div class="left">
+                                    <div class="clock clock-Berlin"></div>
+                                    <div class="date date-Berlin"></div>
+                                    <div class="city city-Berlin"></div>
+                                    <div class="temp-block">
+                                        <img
+                                            src="./templates/img/weather-svg/sad.png"
+                                            alt="weather Berlin"
+                                            class="weather-icon weather-icon-Berlin"
+                                        />
+                                        <div
+                                            class="tempreture tempreture-Berlin"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <img
+                                        class="right-img"
+                                        src="https://img5.goodfon.ru/original/320x240/e/52/germaniia-berlin-vecher-ogni-1.jpg"
+                                        alt="picture Berlin"
+                                    />
+                                </div>
+                            </div>
+                            <div class="weather-card Hamburg germany _active">
+                                <div class="left">
+                                    <div class="clock clock-Hamburg"></div>
+                                    <div class="date date-Hamburg"></div>
+                                    <div class="city city-Hamburg"></div>
+                                    <div class="temp-block">
+                                        <img
+                                            src="./templates/img/weather-svg/sad.png"
+                                            alt="weather Hamburg"
+                                            class="weather-icon weather-icon-Hamburg"
+                                        />
+                                        <div
+                                            class="tempreture tempreture-Hamburg"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <img
+                                        class="right-img"
+                                        src="https://pw.artfile.me/wallpaper/22-09-2013/335x230/gamburg-goroda-ogni-nochnogo-noch-reka-d-753581.jpg"
+                                        alt="picture Hamburg"
+                                    />
+                                </div>
+                            </div>
+                            <div class="weather-card Frankfurt germany _active">
+                                <div class="left">
+                                    <div class="clock clock-Frankfurt"></div>
+                                    <div class="date date-Frankfurt"></div>
+                                    <div class="city city-Frankfurt"></div>
+                                    <div class="temp-block">
+                                        <img
+                                            src="./templates/img/weather-svg/sad.png"
+                                            alt="weather Frankfurt"
+                                            class="weather-icon weather-icon-Frankfurt"
+                                        />
+                                        <div
+                                            class="tempreture tempreture-Frankfurt"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <img
+                                        class="right-img"
+                                        src="https://cdn.tripster.ru/thumbs2/c3bd8702-877a-11e7-9c05-6e714efd800d.384x289.jpg"
+                                        alt="picture Frankfurt"
+                                    />
+                                </div>
+                            </div>
+                            <div class="weather-card Munich germany _active">
+                                <div class="left">
+                                    <div class="clock clock-Munich"></div>
+                                    <div class="date date-Munich"></div>
+                                    <div class="city city-Munich"></div>
+                                    <div class="temp-block">
+                                        <img
+                                            src="./templates/img/weather-svg/sad.png"
+                                            alt="weather Munich"
+                                            class="weather-icon weather-icon-Munich"
+                                        />
+                                        <div
+                                            class="tempreture tempreture-Munich"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <img
+                                        class="right-img"
+                                        src="https://mospravda.ru/wp-content/uploads/2016/07/munih-326x235.jpg"
+                                        alt="picture Munich"
+                                    />
+                                </div>
+                            </div>
+                            <div class="weather-card Cologne germany _active">
+                                <div class="left">
+                                    <div class="clock clock-Cologne"></div>
+                                    <div class="date date-Cologne"></div>
+                                    <div class="city city-Cologne"></div>
+                                    <div class="temp-block">
+                                        <img
+                                            src="./templates/img/weather-svg/sad.png"
+                                            alt="weather Cologne"
+                                            class="weather-icon weather-icon-Cologne"
+                                        />
+                                        <div
+                                            class="tempreture tempreture-Cologne"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <img
+                                        class="right-img"
+                                        src="https://besthqwallpapers.com/Uploads/16-9-2019/104262/thumb-cologne-germany-cityscape-cologne-cathedral-cathedral-church-of-saint-peter.jpg"
+                                        alt="picture Cologne"
+                                    />
+                                </div>
+                            </div>
+                            <div class="weather-card Tokyo japan _active">
+                                <div class="left">
+                                    <div class="clock clock-Tokyo"></div>
+                                    <div class="date date-Tokyo"></div>
+                                    <div class="city city-Tokyo"></div>
+                                    <div class="temp-block">
+                                        <img
+                                            src="./templates/img/weather-svg/sad.png"
+                                            alt="weather Tokyo"
+                                            class="weather-icon weather-icon-Tokyo"
+                                        />
+                                        <div
+                                            class="tempreture tempreture-Tokyo"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <img
+                                        class="right-img"
+                                        src="https://img.smi2.net/470x246/37e693e4129f65f932368f78b4b577c4ab887f3e.jpg?u=aHR0cHM6Ly93d3cub3NubWVkaWEucnUvd3AtY29udGVudC91cGxvYWRzLzIwMjIvMTEvZ29yb2RhLXRva2lvLXlhcG9uaXlhLWhkci1heml5YS03MDg3NTYuanBn"
+                                        alt="picture Tokyo"
+                                    />
+                                </div>
+                            </div>
+                            <div class="weather-card Kyoto japan _active">
+                                <div class="left">
+                                    <div class="clock clock-Kyoto"></div>
+                                    <div class="date date-Kyoto"></div>
+                                    <div class="city city-Kyoto"></div>
+                                    <div class="temp-block">
+                                        <img
+                                            src="./templates/img/weather-svg/sad.png"
+                                            alt="weather Kyoto"
+                                            class="weather-icon weather-icon-Kyoto"
+                                        />
+                                        <div
+                                            class="tempreture tempreture-Kyoto"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <img
+                                        class="right-img"
+                                        src="https://ik.imagekit.io/f8xal2viyc0/cities/2022-10-11_UMgzkDmL2.jpeg"
+                                        alt="picture Kyoto"
+                                    />
+                                </div>
+                            </div>
+                            <div class="weather-card Osaka japan _active">
+                                <div class="left">
+                                    <div class="clock clock-Osaka"></div>
+                                    <div class="date date-Osaka"></div>
+                                    <div class="city city-Osaka"></div>
+                                    <div class="temp-block">
+                                        <img
+                                            src="./templates/img/weather-svg/sad.png"
+                                            alt="weather Osaka"
+                                            class="weather-icon weather-icon-Osaka"
+                                        />
+                                        <div
+                                            class="tempreture tempreture-Osaka"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <img
+                                        class="right-img"
+                                        src="https://tourjapan.ru/upload/resize_cache/iblock/419/403_258_1/419e66362d57b346f0d5dd632cf765dd.jpg"
+                                        alt="picture Osaka"
+                                    />
+                                </div>
+                            </div>
+                            <div
+                                class="weather-card Kuala-Lumpur malaysia _active"
+                            >
+                                <div class="left">
+                                    <div class="clock clock-Kuala-Lumpur"></div>
+                                    <div class="date date-Kuala-Lumpur"></div>
+                                    <div class="city city-Kuala-Lumpur"></div>
+                                    <div class="temp-block">
+                                        <img
+                                            src="./templates/img/weather-svg/sad.png"
+                                            alt="weather Kuala-Lumpur"
+                                            class="weather-icon weather-icon-Kuala-Lumpur"
+                                        />
+                                        <div
+                                            class="tempreture tempreture-Kuala-Lumpur"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <img
+                                        class="right-img"
+                                        src="https://pbs.twimg.com/media/BucJTnHCAAAD5FN.jpg"
+                                        alt="picture Kuala-Lumpur"
+                                    />
+                                </div>
+                            </div>
+                            <div
+                                class="weather-card Georgetown malaysia _active"
+                            >
+                                <div class="left">
+                                    <div class="clock clock-Georgetown"></div>
+                                    <div class="date date-Georgetown"></div>
+                                    <div class="city city-Georgetown"></div>
+                                    <div class="temp-block">
+                                        <img
+                                            src="./templates/img/weather-svg/sad.png"
+                                            alt="weather Georgetown"
+                                            class="weather-icon weather-icon-Georgetown"
+                                        />
+                                        <div
+                                            class="tempreture tempreture-Georgetown"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <img
+                                        class="right-img"
+                                        src="https://i.pinimg.com/736x/e1/63/90/e163903b44aad8b9c30b4fdf4d680c1b.jpg"
+                                        alt="picture Georgetown"
+                                    />
+                                </div>
+                            </div>
+                            <div class="weather-card Malacca malaysia _active">
+                                <div class="left">
+                                    <div class="clock clock-Malacca"></div>
+                                    <div class="date date-Malacca"></div>
+                                    <div class="city city-Malacca"></div>
+                                    <div class="temp-block">
+                                        <img
+                                            src="./templates/img/weather-svg/sad.png"
+                                            alt="weather Malacca"
+                                            class="weather-icon weather-icon-Malacca"
+                                        />
+                                        <div
+                                            class="tempreture tempreture-Malacca"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <img
+                                        class="right-img"
+                                        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_7jvHVQUYeM8KUpg9iExwMaGVG5sDd4HyotaHl9jEXyjeK-J7oXPqxI-n8YPEEEe2CliAEa45QfHzXl2a0pIHBmsPveE1PagXJhbdMUR48oSkVNlpqk6sY97IZeypzbDLcanU3rCOH8LD80AlWBF_zVNM-F3UtIZ0Hl-54zb3MGLrI-H77x0Ds9cC/s400/%D0%9C%D0%B0%D0%BB%D0%B0%D0%BA%D0%BA%D0%B0.jpg"
+                                        alt="picture Malacca"
+                                    />
+                                </div>
+                            </div>
+
+                            <div class="btn-block">
+                                <button class="load-more-btn">
+                                    <span>Load more</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="tour-packages">
+                <div class="tour-packages__wrapper">
+                    <h2
+                        class="places__title wow animate__animated animate__zoomInLeft"
+                    >
+                        Tour packages for you
+                    </h2>
+
+                    <div class="swipper-2__container">
+                        <div class="swiper2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide swiper-slide-active">
+                                    <div class="sale-card sale-card-1">
+                                        <img
+                                            class="sale-or-good"
+                                            src="./templates/img/sale-50%.png"
+                                            alt="sale 50% off"
+                                        />
+
+                                        <div class="sale-wrapper">
+                                            <div class="sale">SALE</div>
+                                        </div>
+                                        <div class="text">
+                                            <span
+                                                ><i
+                                                    class="fa-sharp fa-solid fa-tag"
+                                                ></i></span
+                                            ><del>1000 USD</del>
+                                            <span>499 USD</span>
+                                            <p class="first">
+                                                <i
+                                                    class="fa-regular fa-clock"
+                                                ></i
+                                                >Duration: 5 days
+                                            </p>
+                                            <p>
+                                                <i
+                                                    class="fa-solid fa-map-location-dot"
+                                                ></i>
+                                                Istanbul, Antalya
+                                            </p>
+                                        </div>
+                                        <div class="bottom">
+                                            <p>Tours in Turkiye</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-active">
+                                    <div class="sale-card sale-card-2">
+                                        <img
+                                            class="sale-or-good"
+                                            src="./templates/img/svg/best-choice-icon.svg"
+                                            alt=""
+                                        />
+
+                                        <div class="text">
+                                            <span
+                                                ><i
+                                                    class="fa-sharp fa-solid fa-tag"
+                                                ></i
+                                            ></span>
+
+                                            <span>699 USD</span>
+                                            <p class="first">
+                                                <i
+                                                    class="fa-regular fa-clock"
+                                                ></i
+                                                >Duration: 7 days
+                                            </p>
+                                            <p>
+                                                <i
+                                                    class="fa-solid fa-map-location-dot"
+                                                ></i>
+                                                Beijing, Shanghai
+                                            </p>
+                                        </div>
+                                        <div class="bottom">
+                                            <p>Tours in China</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-active">
+                                    <div class="sale-card sale-card-3">
+                                        <img
+                                            class="sale-or-good"
+                                            src="./templates/img/sale-40%.png"
+                                            alt="sale 50% off"
+                                        />
+
+                                        <div class="sale-wrapper">
+                                            <div class="sale">SALE</div>
+                                        </div>
+                                        <div class="text">
+                                            <span
+                                                ><i
+                                                    class="fa-sharp fa-solid fa-tag"
+                                                ></i></span
+                                            ><del>1000 USD</del>
+                                            <span>399 USD</span>
+                                            <p class="first">
+                                                <i
+                                                    class="fa-regular fa-clock"
+                                                ></i
+                                                >Duration: 4 days
+                                            </p>
+                                            <p>
+                                                <i
+                                                    class="fa-solid fa-map-location-dot"
+                                                ></i>
+                                                Male
+                                            </p>
+                                        </div>
+                                        <div class="bottom">
+                                            <p>Tours in Maldives</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-active">
+                                    <div class="sale-card sale-card-4">
+                                        <img
+                                            class="sale-or-good"
+                                            src="./templates/img/sale-75%.png"
+                                            alt="sale 50% off"
+                                        />
+
+                                        <div class="sale-wrapper">
+                                            <div class="sale">SALE</div>
+                                        </div>
+                                        <div class="text">
+                                            <span
+                                                ><i
+                                                    class="fa-sharp fa-solid fa-tag"
+                                                ></i></span
+                                            ><del>2500 USD</del>
+                                            <span>650 USD</span>
+                                            <p class="first">
+                                                <i
+                                                    class="fa-regular fa-clock"
+                                                ></i
+                                                >Duration: 1 weak
+                                            </p>
+                                            <p>
+                                                <i
+                                                    class="fa-solid fa-map-location-dot"
+                                                ></i>
+                                                Tokyo, Kyoto
+                                            </p>
+                                        </div>
+                                        <div class="bottom">
+                                            <p>Tours in Japan</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-active">
+                                    <div class="sale-card sale-card-5">
+                                        <img
+                                            class="sale-or-good"
+                                            src="./templates/img/sale-80%.png"
+                                            alt="sale 50% off"
+                                        />
+
+                                        <div class="sale-wrapper">
+                                            <div class="sale">SALE</div>
+                                        </div>
+                                        <div class="text">
+                                            <span
+                                                ><i
+                                                    class="fa-sharp fa-solid fa-tag"
+                                                ></i></span
+                                            ><del>1500 USD</del>
+                                            <span>300 USD</span>
+                                            <p class="first">
+                                                <i
+                                                    class="fa-regular fa-clock"
+                                                ></i
+                                                >Duration: 3 days
+                                            </p>
+                                            <p>
+                                                <i
+                                                    class="fa-solid fa-map-location-dot"
+                                                ></i>
+                                                Kuala-Lumpur
+                                            </p>
+                                        </div>
+                                        <div class="bottom">
+                                            <p>Tours in Malaysia</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-active">
+                                    <div class="sale-card sale-card-6">
+                                        <img
+                                            class="sale-or-good"
+                                            src="./templates/img/svg/best-choice-icon.svg"
+                                            alt="best"
+                                        />
+
+                                        <div class="text">
+                                            <span
+                                                ><i
+                                                    class="fa-sharp fa-solid fa-tag"
+                                                ></i
+                                            ></span>
+
+                                            <span>2500 USD</span>
+                                            <p class="first">
+                                                <i
+                                                    class="fa-regular fa-clock"
+                                                ></i
+                                                >Duration: 6 days
+                                            </p>
+                                            <p>
+                                                <i
+                                                    class="fa-solid fa-map-location-dot"
+                                                ></i>
+                                                Madrid, Barcelona
+                                            </p>
+                                        </div>
+                                        <div class="bottom">
+                                            <p>Tours in Spain</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-active">
+                                    <div class="sale-card sale-card-7">
+                                        <img
+                                            class="sale-or-good"
+                                            src="./templates/img/svg/best-choice-icon.svg"
+                                            alt="best way"
+                                        />
+
+                                        <div class="text">
+                                            <span
+                                                ><i
+                                                    class="fa-sharp fa-solid fa-tag"
+                                                ></i
+                                            ></span>
+
+                                            <span>2000 USD</span>
+                                            <p class="first">
+                                                <i
+                                                    class="fa-regular fa-clock"
+                                                ></i
+                                                >Duration: 5 days
+                                            </p>
+                                            <p>
+                                                <i
+                                                    class="fa-solid fa-map-location-dot"
+                                                ></i>
+                                                Paris, Lyon
+                                            </p>
+                                        </div>
+                                        <div class="bottom">
+                                            <p>Tours in France</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-active">
+                                    <div class="sale-card sale-card-8">
+                                        <img
+                                            class="sale-or-good"
+                                            src="./templates/img/sale-50%.png"
+                                            alt="sale 50% off"
+                                        />
+
+                                        <div class="sale-wrapper">
+                                            <div class="sale">SALE</div>
+                                        </div>
+                                        <div class="text">
+                                            <span
+                                                ><i
+                                                    class="fa-sharp fa-solid fa-tag"
+                                                ></i></span
+                                            ><del>3000 USD</del>
+                                            <span>1500 USD</span>
+                                            <p class="first">
+                                                <i
+                                                    class="fa-regular fa-clock"
+                                                ></i
+                                                >Duration: 4 days
+                                            </p>
+                                            <p>
+                                                <i
+                                                    class="fa-solid fa-map-location-dot"
+                                                ></i>
+                                                London, Manchester
+                                            </p>
+                                        </div>
+                                        <div class="bottom">
+                                            <p>Tours in United Kingdom</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-active">
+                                    <div class="sale-card sale-card-9">
+                                        <img
+                                            class="sale-or-good"
+                                            src="./templates/img/sale-40%.png"
+                                            alt="sale 40% off"
+                                        />
+
+                                        <div class="sale-wrapper">
+                                            <div class="sale">SALE</div>
+                                        </div>
+                                        <div class="text">
+                                            <span
+                                                ><i
+                                                    class="fa-sharp fa-solid fa-tag"
+                                                ></i></span
+                                            ><del>3000 USD</del>
+                                            <span>1800 USD</span>
+                                            <p class="first">
+                                                <i
+                                                    class="fa-regular fa-clock"
+                                                ></i
+                                                >Duration: 4 days
+                                            </p>
+                                            <p>
+                                                <i
+                                                    class="fa-solid fa-map-location-dot"
+                                                ></i>
+                                                New-York, Washington
+                                            </p>
+                                        </div>
+                                        <div class="bottom">
+                                            <p>Tours in USA</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-active">
+                                    <div class="sale-card sale-card-10">
+                                        <img
+                                            class="sale-or-good"
+                                            src="./templates/img/svg/best-choice-icon.svg"
+                                            alt="best choose"
+                                        />
+
+                                        <div class="text">
+                                            <span
+                                                ><i
+                                                    class="fa-sharp fa-solid fa-tag"
+                                                ></i
+                                            ></span>
+
+                                            <span>2000 USD</span>
+                                            <p class="first">
+                                                <i
+                                                    class="fa-regular fa-clock"
+                                                ></i
+                                                >Duration: 10 days
+                                            </p>
+                                            <p>
+                                                <i
+                                                    class="fa-solid fa-map-location-dot"
+                                                ></i>
+                                                Berlin, Hamburg, Cologne
+                                            </p>
+                                        </div>
+                                        <div class="bottom">
+                                            <p>Tours in Germany</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-active">
+                                    <div class="sale-card sale-card-11">
+                                        <img
+                                            class="sale-or-good"
+                                            src="./templates/img/svg/best-choice-icon.svg"
+                                            alt="best"
+                                        />
+
+                                        <div class="text">
+                                            <span
+                                                ><i
+                                                    class="fa-sharp fa-solid fa-tag"
+                                                ></i
+                                            ></span>
+
+                                            <span>2500 USD</span>
+                                            <p class="first">
+                                                <i
+                                                    class="fa-regular fa-clock"
+                                                ></i
+                                                >Duration: 6 days
+                                            </p>
+                                            <p>
+                                                <i
+                                                    class="fa-solid fa-map-location-dot"
+                                                ></i>
+                                                Los-Angeles, Miami
+                                            </p>
+                                        </div>
+                                        <div class="bottom">
+                                            <p>Tours in USA</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-active">
+                                    <div class="sale-card sale-card-12">
+                                        <img
+                                            class="sale-or-good"
+                                            src="./templates/img/sale-40%.png"
+                                            alt="sale 40% off"
+                                        />
+
+                                        <div class="sale-wrapper">
+                                            <div class="sale">SALE</div>
+                                        </div>
+                                        <div class="text">
+                                            <span
+                                                ><i
+                                                    class="fa-sharp fa-solid fa-tag"
+                                                ></i></span
+                                            ><del>900 USD</del>
+                                            <span>550 USD</span>
+                                            <p class="first">
+                                                <i
+                                                    class="fa-regular fa-clock"
+                                                ></i
+                                                >Duration: 3 days
+                                            </p>
+                                            <p>
+                                                <i
+                                                    class="fa-solid fa-map-location-dot"
+                                                ></i>
+                                                Shanghai
+                                            </p>
+                                        </div>
+                                        <div class="bottom">
+                                            <p>Tours in China</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-button-prev2">
+                                <img
+                                    src="./templates/img/left-arrow.png"
+                                    alt="arrow left"
+                                />
+                            </div>
+                            <div class="swiper-button-next2">
+                                <img
+                                    src="./templates/img/right-arrow.png"
+                                    alt="arrow rigth"
+                                />
+                            </div>
+
+                            <div class="swiper-pagination2"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Places end -->
+
+            <!-- Top start -->
+            <section class="top" id="top">
+                <div class="top__wrapper">
+                    <div class="wrapper-full">
+                        <h2
+                            class="top__title section-title wow animate__animated animate__heartBeat"
+                        >
+                            Today top places to visit
+                        </h2>
+
+                        <div class="top__cards">
+                            <div class="top__card">
+                                <div
+                                    class="top__card-pic wow animate__animated animate__wobble"
+                                >
+                                    <img
+                                        src="./templates/img/top-pic-1-min.jpg"
+                                        alt="NAGOYA"
+                                        class="top__card-thumb"
+                                    />
+                                    <div class="top__card-stats">
+                                        <h3 class="top__card-title">NAGOYA</h3>
+                                        <div class="top__card-likes">
+                                            <a
+                                                href="#"
+                                                class="top__card-likes-value top-card__hover"
+                                            >
+                                                221
+                                            </a>
+                                        </div>
+                                        <div class="top__card-comments">
+                                            <a
+                                                href="#"
+                                                class="top__card-comments-value"
+                                            >
+                                                50
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="top__card-desc">
+                                    Jump off balcony, onto stranger's head.
+                                    Chase ball of string hide when guests come
+                                    over. Being gorgeous with belly side up i
+                                    could pee on this. Jump off balcony, onto
+                                    stranger's head. Chase ball of string hide
+                                    when guests come over. Being gorgeous with
+                                    belly side up i could pee on this.
+                                </p>
+                                <a href="#!" class="top__card-more">SEE MORE</a>
+                            </div>
+
+                            <div class="top__card">
+                                <div
+                                    class="top__card-pic wow animate__animated animate__wobble"
+                                >
+                                    <img
+                                        src="./templates/img/top-pic-2-min.jpg"
+                                        alt="NIIGATA"
+                                        class="top__card-thumb"
+                                    />
+                                    <div class="top__card-stats">
+                                        <h3 class="top__card-title">NIIGATA</h3>
+                                        <div class="top__card-likes">
+                                            <a
+                                                href="#"
+                                                class="top__card-likes-value"
+                                            >
+                                                221
+                                            </a>
+                                        </div>
+                                        <div class="top__card-comments">
+                                            <a
+                                                href="#"
+                                                class="top__card-comments-value"
+                                            >
+                                                50
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="top__card-desc">
+                                    Jump off balcony, onto stranger's head.
+                                    Chase ball of string hide when guests come
+                                    over. Being gorgeous with belly side up i
+                                    could pee on this.
+                                </p>
+                                <a href="#!" class="top__card-more">SEE MORE</a>
+                            </div>
+
+                            <div class="top__card">
+                                <div
+                                    class="top__card-pic wow animate__animated animate__wobble"
+                                >
+                                    <img
+                                        src="./templates/img/top-pic-3-min.jpg"
+                                        alt="OSAKA"
+                                        class="top__card-thumb"
+                                    />
+                                    <div class="top__card-stats">
+                                        <h3 class="top__card-title">OSAKA</h3>
+                                        <div class="top__card-likes">
+                                            <a
+                                                href="#"
+                                                class="top__card-likes-value"
+                                            >
+                                                221
+                                            </a>
+                                        </div>
+                                        <div class="top__card-comments">
+                                            <a
+                                                href="#"
+                                                class="top__card-comments-value"
+                                            >
+                                                50
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="top__card-desc">
+                                    Jump off balcony, onto stranger's head.
+                                    Chase ball of string hide when guests come
+                                    over. Being gorgeous with belly side up i
+                                    could pee on this.
+                                </p>
+                                <a href="#!" class="top__card-more">SEE MORE</a>
+                            </div>
+
+                            <div class="top__card">
+                                <div
+                                    class="top__card-pic wow animate__animated animate__tada"
+                                >
+                                    <img
+                                        src="./templates/img/top-pic-4-min.jpg"
+                                        alt="SAITAMA"
+                                        class="top__card-thumb"
+                                    />
+                                    <div class="top__card-stats">
+                                        <h3 class="top__card-title">SAITAMA</h3>
+                                        <div class="top__card-likes">
+                                            <a
+                                                href="#"
+                                                class="top__card-likes-value"
+                                            >
+                                                221
+                                            </a>
+                                        </div>
+                                        <div class="top__card-comments">
+                                            <a
+                                                href="#"
+                                                class="top__card-comments-value"
+                                            >
+                                                50
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="top__card-desc">
+                                    Jump off balcony, onto stranger's head.
+                                    Chase ball of string hide when guests come
+                                    over. Being gorgeous with belly side up i
+                                    could pee on this.
+                                </p>
+                                <a href="#!" class="top__card-more">SEE MORE</a>
+                            </div>
+
+                            <div class="top__card">
+                                <div
+                                    class="top__card-pic wow animate__animated animate__tada"
+                                >
+                                    <img
+                                        src="./templates/img/top-pic-5-min.jpg"
+                                        alt="UENO"
+                                        class="top__card-thumb"
+                                    />
+                                    <div class="top__card-stats">
+                                        <h3 class="top__card-title">UENO</h3>
+                                        <div class="top__card-likes">
+                                            <a
+                                                href="#"
+                                                class="top__card-likes-value"
+                                            >
+                                                221
+                                            </a>
+                                        </div>
+                                        <div class="top__card-comments">
+                                            <a
+                                                href="#"
+                                                class="top__card-comments-value"
+                                            >
+                                                50
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="top__card-desc">
+                                    Jump off balcony, onto stranger's head.
+                                    Chase ball of string hide when guests come
+                                    over. Being gorgeous with belly side up i
+                                    could pee on this. Jump off balcony, onto
+                                    stranger's head. Chase ball of string hide
+                                    when guests come over. Being gorgeous with
+                                    belly side up i could pee on this.
+                                </p>
+                                <a href="#!" class="top__card-more">SEE MORE</a>
+                            </div>
+
+                            <div class="top__card">
+                                <div
+                                    class="top__card-pic wow animate__animated animate__tada"
+                                >
+                                    <img
+                                        src="./templates/img/top-pic-6-min.jpg"
+                                        alt="SHIBUYA"
+                                        class="top__card-thumb"
+                                    />
+                                    <div class="top__card-stats">
+                                        <h3 class="top__card-title">SHIBUYA</h3>
+                                        <div class="top__card-likes">
+                                            <a
+                                                href="#"
+                                                class="top__card-likes-value"
+                                            >
+                                                221
+                                            </a>
+                                        </div>
+                                        <div class="top__card-comments">
+                                            <a
+                                                href="#"
+                                                class="top__card-comments-value"
+                                            >
+                                                50
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="top__card-desc">
+                                    Jump off balcony, onto stranger's head.
+                                    Chase ball of string hide when guests come
+                                    over. Being gorgeous with belly side up i
+                                    could pee on this.
+                                </p>
+                                <a href="#!" class="top__card-more">SEE MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="stores-map">
+                <div class="stores-map__inner">
+                    <div class="row stores-map__header justify-content-center">
+                        <div>
+                            <h2 class="map-header__title">
+                                Find our locations
+                            </h2>
+                            <div class="map-header__store-section">
+                                <select class="form-select form-select-sm mb-2">
+                                    <option selected value="istanbul">
+                                        Istanbul, Turkiye
+                                    </option>
+                                    <option value="moscow">
+                                        Moscow, Russia
+                                    </option>
+                                    <option value="minsk">
+                                        Minsk, Belarus
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="store_istanbul" class="stores-map__main">
+                    <div class="officies-container">
+                        <div class="content-store__inner">
+                            <span> </span>
+                            <span> </span>
+                            <span> </span>
+                            <span> </span>
+                            <h2 class="content-store__title">
+                                Office in <strong>Istanbul</strong>
+                            </h2>
+                            <div class="content-store__contact">
+                                <ul class="contact-list">
+                                    <li class="contatct-list__item mail">
+                                        <a
+                                            href="#"
+                                            class="contact-list__item__wrapper"
+                                        >
+                                            <div
+                                                class="contact__icon phone-icon"
+                                            >
+                                                <i
+                                                    class="fas fa-map-marker-alt"
+                                                ></i>
+                                            </div>
+                                            <div class="contact__inner">
+                                                <h4 class="contact__label">
+                                                    Adress:
+                                                </h4>
+                                                <div class="contact__value contact__city">
+                                                    kalem str. Kadikoy, Istanbul
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="contatct-list__item number">
+                                        <div
+                                      
+                                            class="contact-list__item__wrapper"
+                                        >
+                                            <div
+                                                class="contact__icon phone-icon"
+                                            >
+                                                <i class="fas fa-phone"></i>
+                                            </div>
+                                            <a href="tel:+9054212254" class="contact__inner">
+                                                <span class="contact__label">
+                                                    Telefon
+                                                </span>
+                                                <br>
+                                                <span class="contact__value contact__number">
+                                                    +9054212254
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="contatct-list__item mail">
+                                        <div
+                                     
+                                            class="contact-list__item__wrapper"
+                                        >
+                                            <div
+                                                class="contact__icon phone-icon"
+                                            >
+                                                <i
+                                                    class="fas fa-envelope-open"
+                                                ></i>
+                                            </div>
+                                            <a
+                                                href="mailto:nieco@nieco.com"
+                                                class="contact__inner"
+                                            >
+                                                <span class="contact__label">
+                                                    E-mail
+                                                </span>
+                                                <br />
+                                                <span class="contact__value contact__email">
+                                                    feda@mail.ru
+                                                </span>
+                                            </a>
+                                        </в>
+                                    </li>
+                                    <li class="contatct-list__item mail">
+                                        <a
+                                            href="#"
+                                            class="contact-list__item__wrapper"
+                                        >
+                                            <div
+                                                class="contact__icon phone-icon"
+                                            >
+                                                <i class="fas fa-clock"></i>
+                                            </div>
+                                            <div class="contact__inner">
+                                                <h4 class="contact__label">
+                                                    Work hours
+                                                </h4>
+                                                <div class="contact__value">
+                                                    Mon-Fri: 9:00 - 18:00
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="content-store__more-info">
+                                <div class="opening-hours">
+                                    <h4 class="opening-hours__title">
+                                        Weekly working hours
+                                    </h4>
+                                    <ul class="opening-hours__days">
+                                        <li>
+                                            <p>Monday</p>
+                                            <strong>9:00-18:00</strong>
+                                        </li>
+                                        <li>
+                                            <p>Thuesday</p>
+                                            <strong>9:00-18:00</strong>
+                                        </li>
+                                        <li>
+                                            <p>Wendesday</p>
+                                            <strong>9:00-18:00</strong>
+                                        </li>
+                                        <li>
+                                            <p>Thursday</p>
+                                            <strong>9:00-18:00</strong>
+                                        </li>
+                                        <li>
+                                            <p>Friday</p>
+                                            <strong>9:00-18:00</strong>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="shop-picture">
+                                    <img class="picture-city"
+                                        src="https://lh5.googleusercontent.com/p/AF1QipMRGfYYoUL3NdQU_ruPSjgmJuOYB15XBctYV8a3=w408-h272-k-no"
+                                        width="200px"
+                                        height="200px"
+                                        alt="picture city"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+          <!--  -->
+
+                
+            </section>
+            <div class="contact-us-wrapper">
+                <form class="contact-us" action="#">
+                    <h1>Contact Us Form</h1>
+                    <input
+                        type="text"
+                        id="firstName"
+                        placeholder="First Name"
+                        required
+                    />
+                    <input
+                        type="text"
+                        id="lastName"
+                        placeholder="Last Name"
+                        required
+                    />
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Email"
+                        required
+                    />
+                    <input
+                        type="number"
+                        id="mobile"
+                        placeholder="Phone number"
+                        required
+                    />
+                    <h4>Type Your Message Here...</h4>
+                    <textarea required></textarea>
+                    <button type="submit" id="button">Send</button>
+                </form>
+            </div>
+        </main>
+
+        <!-- Footer Start -->
+        <footer>
+            <div class="footer__wrapper">
+                <section class="footer">
+                    <div class="brand">
+                        <a href="main.html" class="header__logo">
+                            <img
+                                src="./templates/img/logo.jpg"
+                                alt="logo footer"
+                            />
+                        </a>
+                        <p>34774, Kerem str.12, Umraniye, Istanbul, Turkiye.</p>
+                        <div class="social">
+                            <a
+                                href="https://twitter.com/raihshn"
+                                class="social-icon"
+                                target="_blank"
+                            >
+                                <svg
+                                    width="20"
+                                    height="16"
+                                    fill="none"
+                                    viewBox="0 0 20 16"
+                                >
+                                    <path
+                                        fill="#F2C855"
+                                        d="M6.038 16c7.246 0 11.208-6.155 11.208-11.492 0-.175-.003-.35-.011-.523A8.127 8.127 0 0 0 19.2 1.894a7.702 7.702 0 0 1-2.262.636A4.038 4.038 0 0 0 18.67.296c-.773.47-1.62.802-2.501.98A3.89 3.89 0 0 0 13.293 0c-2.175 0-3.94 1.809-3.94 4.039 0 .317.035.625.103.92C6.182 4.792 3.28 3.184 1.336.74a4.107 4.107 0 0 0-.533 2.03c0 1.402.695 2.639 1.753 3.363a3.837 3.837 0 0 1-1.784-.505v.051c0 1.956 1.357 3.59 3.16 3.96a3.853 3.853 0 0 1-1.78.069c.502 1.605 1.956 2.773 3.68 2.805A7.78 7.78 0 0 1 0 14.185 10.951 10.951 0 0 0 6.038 16"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="#fb" class="social-icon">
+                                <svg
+                                    width="11"
+                                    height="20"
+                                    fill="none"
+                                    viewBox="0 0 11 20"
+                                >
+                                    <path
+                                        fill="#F2C855"
+                                        d="m10.009 11.249.555-3.618h-3.47V5.284c0-.99.484-1.955 2.04-1.955h1.577V.244S9.28 0 7.907 0c-2.858 0-4.73 1.733-4.73 4.871v2.76H0v3.618h3.178V20h3.91v-8.751h2.92Z"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="#youtube" class="social-icon">
+                                <svg
+                                    width="18"
+                                    height="14"
+                                    fill="none"
+                                    viewBox="0 0 18 14"
+                                >
+                                    <path
+                                        fill="#F2C855"
+                                        d="m9.37 13.043-3.6-.066c-1.166-.023-2.334.023-3.477-.215C.554 12.407.43 10.666.303 9.205a24.955 24.955 0 0 1 .225-6.181c.19-1.143.934-1.825 2.086-1.899C6.5.855 10.413.888 14.29 1.013c.41.012.822.075 1.226.147 1.994.349 2.042 2.322 2.172 3.984a22.587 22.587 0 0 1-.172 5.032c-.198 1.38-.576 2.538-2.172 2.65-2 .146-3.953.263-5.957.226 0-.009-.012-.009-.018-.009ZM7.254 9.55c1.506-.865 2.984-1.716 4.482-2.575-1.51-.865-2.984-1.716-4.482-2.575v5.15Z"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="about">
+                        <div class="h5">About Us</div>
+                        <a href="#">Address</a>
+                        <a href="#">Community update</a>
+                        <a href="#">Press Kit</a>
+                        <a href="#">Contact Us</a>
+                    </div>
+                    <div class="subjects">
+                        <div class="h5">Subjects</div>
+                        <a href="#">English</a>
+                        <a href="#">Math</a>
+                        <a href="#">Science</a>
+                        <a href="#">Social Sceince</a>
+                    </div>
+                    <div class="product">
+                        <div class="h5">Product</div>
+                        <a href="#">Pricing</a>
+                        <a href="#">Enterprice</a>
+                        <a href="#">Integrate</a>
+                        <a href="#">What’s New</a>
+                    </div>
+                    <div class="subscribe">
+                        <div class="h5">Subscribe Now</div>
+                        <form action="#" method="POST" class="newsletter">
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="Email Address"
+                                required
+                            />
+                            <button type="submit" name="submit">Send</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+            <section class="copyright">
+                <div class="copyright__wrapper">
+                    <p><span>©</span> 2023 Rights Reserved, Rozy</p>
+                    <p>
+                        <a href="#privacy">Privacy</a>
+                        |
+                        <a href="#terms">Terms & Conditions</a>
+                        |
+                        <a href="#security">Security & Privacy</a>
+                    </p>
+                </div>
+            </section>
+        </footer>
+        <!-- Footer End -->
+        <script src="
+        https://cdn.jsdelivr.net/npm/swiper@9.0.2/swiper-bundle.min.js
+        "></script>
+        <script src="./js/aa.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>

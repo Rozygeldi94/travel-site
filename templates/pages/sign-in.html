@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../../css/pages/signIn.css" />
+    </head>
+    <body>
+        <?php
+             if($_COOKIE['user'] == ''):
+         ?>
+        <div class="page-signIn">
+            <div class="page-signIn__container">
+                <a href="../../main.html" class="page-signIn__logo-link">
+                    <img
+                        src="../img/logo.jpg"
+                        alt="logo sign-in "
+                        class="page-signIn__logo-pic"
+                    />
+                </a>
+
+                <form class="form" action="../requests/auth.php" method="post">
+                    <h1 class="title">Sign in</h1>
+                    <input
+                        class="input"
+                        type="text"
+                        placeholder="First Name or Email"
+                        name="login"
+                        required
+                    />
+                    <div class="password__container">
+                        <input
+                            class="input password"
+                            type="password"
+                            placeholder="Password"
+                            name="password"
+                            required
+                        />
+                        <img
+                            class="view-hide"
+                            src="../img/page-signIn/view.png"
+                            alt="view"
+                        />
+                    </div>
+
+                    <button class="btn" disabled type="submit">Sign in</button>
+                    <p>
+                        Don't have an account? &nbsp;
+                        <a class="link" href="./create-account.html"
+                            >Create an account</a
+                        >
+                    </p>
+                </form>
+
+                <div class="back-home">
+                    <img
+                        src="../img/page-signIn/back.png"
+                        alt="back-home-page"
+                    />
+                    <a href="../../main.html" class="go-To-Back"
+                        >Back to Main page</a
+                    >
+                </div>
+            </div>
+        </div>
+
+        <?php else: ?>
+        <div class="page-user">
+            <div class="page-user__container">
+                <div class="user">
+                    <img
+                        class="user__img"
+                        src="../img/page-user/user.png"
+                        alt="user.png"
+                    />
+                    <div class="user__info">
+                        <h2 class="user__sayHello">
+                            Hello, my friend
+                            <span class="user__name"><?=$_COOKIE['user']?></span
+                            >!
+                        </h2>
+                        <p class="user__exit">
+                            Click, to exit
+                            <a class="user__btn" href="../requests/exit.php"
+                                >Sign up</a
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <?php endif; ?>
+        <script src="../../js/sign-in.js"></script>
+    </body>
+</html>

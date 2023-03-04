@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Parallax Effect</title>
+        <link rel="stylesheet" href="../../css/pages/parallax-page.css" />
+        <script src="./js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+    </head>
+    <body>
+        <div class="wrapper">
+            <section class="parallax">
+                <div class="parallax__body">
+                    <div class="parallax__container container"></div>
+                    <div class="parallax__images images-parallax">
+                        <div class="images-parallax__item">
+                            <div class="images-parallax__clouds">
+                                <div class="parallax__label">Hello</div>
+                                <h1 class="parallax__title">My name's Rozy</h1>
+                            </div>
+                        </div>
+                        <div class="images-parallax__item">
+                            <div class="images-parallax__mountains"></div>
+                        </div>
+                        <div class="images-parallax__item">
+                            <div class="images-parallax__human"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skils content start -->
+            <section class="content">
+                <div class="content__container container">
+                    <p
+                        class="wow animate__animated animate__headShake animate__infinite"
+                    >
+                        Front-end Skills
+                    </p>
+                    <div class="content__box">HTML 5</div>
+                    <div class="content__box">CSS 3</div>
+                    <div class="content__box">BEM</div>
+                    <div class="content__box">SCSS</div>
+                    <div class="content__box">JavaScript</div>
+                    <div class="content__box">React.js</div>
+                    <div class="content__box">Git & GitHub</div>
+                    <div class="content__box">Webpack 5 & Vite</div>
+                    <div class="content__box">Figma</div>
+                </div>
+            </section>
+        </div>
+        <script src="../../js/parallax-page.js"></script>
+    </body>
+</html>

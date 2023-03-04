@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register new account</title>
+    <link rel="stylesheet" href="../../css/pages/create-account.css" />
+
+  </head>
+  <body>  
+    <canvas id="canvas"></canvas>
+    <form action="../requests/form-request.php" method="post"  class="form">
+      <img class="snow" src="../img/svg/winter-snow-flake.svg" alt="snow">  
+      <img class="snow"src="../img/svg/winter-snow-flake.svg" alt="snow"> 
+      <img class="snow" src="../img/svg/winter-snow-flake.svg" alt="snow">
+      <img class="snow" src="../img/svg/winter-snow-flake.svg" alt="snow">
+    
+      <h2>Resgister an account</h2>
+      <div class="form__input">
+        <img class="firstName__accept"  alt="checkbox accept">    
+        <input
+          type="text"
+          name="ady"
+          class="firstName _required"
+          maxlength="40"
+          id="form__name"
+          required/> 
+        
+        <span class="form__line"></span>
+        <label for="form__name">First Name*</label>
+      </div>
+
+      <div class="form__input">
+        <img class="lastName__accept"  alt="checkbox accept">    
+        <input
+          type="text"
+          name="familyasy"
+          class="lastName _required"
+          maxlength="40"
+          id="form__lastName" 
+          required
+        />
+  
+        <span class="form__line"></span>
+        <label for="form__lastName">Last Name*</label>
+      </div>
+      <div class="form__input">
+      <img class="phoneNumber__accept"  alt="checkbox accept">    
+        <input
+          type="tel"
+          class="_required phoneNumber"
+          name="nomeri"
+          maxlength="20"
+          id="form__number" 
+          required
+        />
+        <span class="form__line"></span>
+        <label>Phone Number*</label><br />
+      </div>
+      <div class="form__input">
+      <img class="email__accept"  alt="checkbox accept">    
+        <input
+          type="email"
+          name="email"
+          maxlength="40"
+          class="_required email"
+          id="form__email"
+          required
+        />
+        <span class="form__line"></span>
+        <label for="form__email">Your Email*</label>
+      </div>
+
+      <div class="form__input">
+        <input
+          type="password"
+          maxlength="25"
+          name="password"
+          class="_required password"
+          id="form__password"
+          required
+        />
+        <span class="form__line"></span>
+        <label for="form__password-2">Password*</label>
+      </div>
+      </div>
+      <div class="form__input">
+        <img class="password__accept"  alt="password accept">
+        <input
+          type="password"
+          maxlength="25"
+          name="confirmPassword"
+          class="_required confirmPassword"
+          id="form__password-2"
+          required
+        />
+        <span class="form__line"> </span>
+        <label for="form__password-2">Confirm Password*</label>
+       
+      </div>
+      <div class="form__bottom">   
+        <div class="aygul">   
+           <img class="checkbox__accept"  alt="checkbox accept">    
+           <input type="checkbox" class="checkbox _required" name="checkbox"> <label for="checkbox">Accept privacy policy</label> 
+        </div> 
+        <button class="form__btn" type="submit">register</button>
+      </div>
+    </form>
+    <script src="../../js/create-account.js"></script>
+  </body>
+</html>
