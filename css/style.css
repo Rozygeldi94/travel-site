@@ -1172,8 +1172,8 @@ img {
     height: 108px;
     overflow: hidden;
     position: absolute;
-    top: -9px;
-    right: -6px;
+    top: -7px;
+    right: -17px;
 }
 
 .sale {
@@ -1224,7 +1224,7 @@ img {
 .sale:after {
     content: "";
     position: absolute;
-    right: 4px;
+    right: 1px;
     top: 100%;
     z-index: -1;
     border-left: 4px solid transparent;
